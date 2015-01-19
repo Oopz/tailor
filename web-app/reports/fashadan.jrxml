@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="fashadan2" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="876ea046-8a8d-4b7b-aa58-b38a98473090">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="c196d680-6714-452b-b900-a8fb91b9df01"/>
+	<parameter name="orderContact" class="java.lang.String"/>
+	<parameter name="logoUrl" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="orderDate" class="java.lang.String"/>
+	<parameter name="orderNumber" class="java.lang.String"/>
+	<field name="yarnType" class="java.lang.String"/>
+	<field name="yarnCount" class="java.lang.String"/>
+	<field name="yarnHue" class="java.lang.String"/>
+	<field name="yarnJar" class="java.lang.String"/>
+	<field name="logWeight" class="java.lang.String"/>
+	<field name="logTotal" class="java.lang.String"/>
+	<field name="logMemo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="555" height="85" uuid="09e53b7d-34f0-49bf-aebb-b555ae466626"/>
+				<staticText>
+					<reportElement x="193" y="0" width="362" height="18" uuid="46e64c5d-e3fc-4156-934c-2d091a9ae922"/>
+					<textElement>
+						<font fontName="Microsoft YaHei" size="12"/>
+					</textElement>
+					<text><![CDATA[广 州 市 易 诚 制 衣 有 限 公 司]]></text>
+				</staticText>
+				<line>
+					<reportElement x="0" y="83" width="555" height="1" forecolor="#000000" uuid="2ba8475d-490f-4160-9628-96f3dc819877"/>
+				</line>
+				<image scaleImage="FillFrame">
+					<reportElement x="0" y="0" width="163" height="83" uuid="2c7f9678-5e40-4819-a6f5-fb61d7d51cc8"/>
+					<imageExpression><![CDATA[$P{logoUrl}]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="193" y="15" width="362" height="18" uuid="f67e76cd-e5cc-4bea-b17b-6ecf3317911e"/>
+					<textElement>
+						<font fontName="Microsoft YaHei"/>
+					</textElement>
+					<text><![CDATA[GUANGZHOUSHI YI CHENG ZHI YI CO., LTD]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="193" y="28" width="362" height="20" uuid="2fdef0a6-47c0-40d0-9bb3-1b1dc4efa641"/>
+					<textElement>
+						<font fontName="Microsoft YaHei"/>
+					</textElement>
+					<text><![CDATA[地址：广州市番禺区南村镇江南工业区二区一号A座]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="441" y="17" width="114" height="20" uuid="7a77c570-6fb6-4fc0-8fdd-89b9be487f61"/>
+					<textElement>
+						<font fontName="Microsoft YaHei"/>
+					</textElement>
+					<text><![CDATA[电话：020-34829618]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="441" y="30" width="100" height="20" uuid="e9195c1e-6917-43aa-bc54-e36592becaa7"/>
+					<textElement>
+						<font fontName="Microsoft YaHei"/>
+					</textElement>
+					<text><![CDATA[传真：020-34829618]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="221" y="56" width="124" height="27" uuid="7c2c959a-6f93-4b33-b66d-c78e49568cc2"/>
+					<textElement>
+						<font fontName="Microsoft YaHei" size="18"/>
+					</textElement>
+					<text><![CDATA[发  纱  单]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="398" y="67" width="43" height="18" uuid="a90a690d-7ec2-4d37-ab8d-027e565a0343"/>
+					<textElement>
+						<font fontName="Microsoft YaHei" size="8"/>
+					</textElement>
+					<text><![CDATA[编号：]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="441" y="67" width="114" height="16" uuid="43ed64e5-f032-4f95-8f30-2d788e21851e"/>
+					<textElement>
+						<font fontName="Microsoft YaHei" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{orderNumber}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="63" y="15" width="100" height="20" uuid="421eb65f-b4f8-4f93-bc34-3e00b4fe91a3"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orderContact}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="34" width="555" height="1" forecolor="#000000" uuid="eb1f2dff-6d4c-4c53-bd64-9d8e73d6dc13"/>
+			</line>
+			<staticText>
+				<reportElement x="6" y="15" width="57" height="18" uuid="c48b061d-9380-48b0-9735-920938e3ce8a"/>
+				<textElement>
+					<font fontName="Microsoft YaHei" size="10"/>
+				</textElement>
+				<text><![CDATA[收货单位：]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="5" width="59" height="20" uuid="ca752480-4b2e-4efe-b9a0-eafd3c5f5408"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<text><![CDATA[纱种]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="5" width="58" height="20" uuid="0630255e-8e94-4bae-8a86-60c6a8f3574a"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<text><![CDATA[纱支]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="5" width="63" height="20" uuid="c906bdd8-fea2-4e5d-a1da-a80a616db23a"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<text><![CDATA[色号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="5" width="54" height="20" uuid="ab07206b-e5b4-4656-b350-83b9cd4b0172"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<text><![CDATA[缸号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="5" width="51" height="20" uuid="91925903-6927-4798-b246-1037ddd912e4"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<text><![CDATA[重量(KG)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="5" width="72" height="20" uuid="b683aae7-70df-4fc2-8ca8-47285cee0aa2"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<text><![CDATA[件数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="5" width="194" height="20" uuid="31abcbd6-0ccb-4772-b51f-508321e5e49d"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<text><![CDATA[备注]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="6" y="5" width="57" height="20" uuid="b290cbd6-97ab-4f5c-98b6-97c71c4463c0"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{yarnType}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="64" y="5" width="57" height="20" uuid="86ec54db-4a88-4b23-abb2-85c0306bf877"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{yarnCount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="121" y="5" width="63" height="20" uuid="0eeb20ee-573f-4f66-9fa5-b243daddae2c"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{yarnHue}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="184" y="5" width="57" height="20" uuid="3b9308c0-400d-43d0-8622-0f0f0022f8be"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{yarnJar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="238" y="5" width="51" height="20" uuid="218c007a-b938-490b-8980-8d3e78366719"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{logWeight}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="289" y="5" width="69" height="20" uuid="263d4b30-34a7-472e-ad59-668c8777413c"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{logTotal}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="361" y="5" width="194" height="20" uuid="541b7429-a5a4-402f-8904-aca29f0626f7"/>
+				<textElement>
+					<font fontName="Microsoft YaHei"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{logMemo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="27" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="6" width="555" height="18" uuid="2cf38004-fefb-4aa3-802a-be388fea4341"/>
+				<textElement>
+					<font fontName="Microsoft YaHei" size="8"/>
+				</textElement>
+				<text><![CDATA[1) 送交贵单位上列货物，祈照盖章签收，给回回单是荷；]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="21" width="289" height="35" uuid="44ac98ea-3218-4f4e-bfbf-2a449b45ef80"/>
+				<textElement>
+					<font fontName="Microsoft YaHei" size="8"/>
+				</textElement>
+				<text><![CDATA[2) 对送达之物品进行品质、数量、颜色验收，如有不符请勿用，并于三天内通知本公司处理；逾期或经使用，我司恕不负责。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="55" width="37" height="18" uuid="e7c09f35-a8f0-4838-86a8-164dae466b83"/>
+				<textElement>
+					<font fontName="Microsoft YaHei" size="10"/>
+				</textElement>
+				<text><![CDATA[制单：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="55" width="37" height="18" uuid="e9beced7-f12c-4339-bfd9-7f79209efbdd"/>
+				<textElement>
+					<font fontName="Microsoft YaHei" size="10"/>
+				</textElement>
+				<text><![CDATA[送货：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="55" width="62" height="18" uuid="b1810ca5-e7eb-4b7d-bec6-c86aaf85103d"/>
+				<textElement>
+					<font fontName="Microsoft YaHei" size="10"/>
+				</textElement>
+				<text><![CDATA[送货日期：]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1" width="555" height="1" forecolor="#000000" uuid="f9ebb7b4-da84-4737-b968-7fbc4ae7b13c"/>
+			</line>
+			<textField>
+				<reportElement x="466" y="55" width="89" height="18" uuid="24c6d637-0f98-43a3-91eb-0683566d8f99"/>
+				<textFieldExpression><![CDATA[$P{orderDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>

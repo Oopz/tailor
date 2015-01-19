@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fontFamilies>
+	<fontFamily name="Microsoft YaHei">
+		<normal>com/tailor/fonts/yahei/msyh.ttf</normal>
+		<bold>com/tailor/fonts/yahei/msyhbd.ttf</bold>
+		<italic>com/tailor/fonts/yahei/msyh.ttf</italic>
+		<boldItalic>com/tailor/fonts/yahei/msyhbd.ttf</boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">'Microsoft YaHei', Arial, Helvetica, sans-serif</export>
+			<export key="net.sf.jasperreports.xhtml">'Microsoft YaHei', Arial, Helvetica, sans-serif</export>
+		</exportFonts>
+		<!--
+		<locales>
+			<locale>en_US</locale>
+			<locale>de_DE</locale>
+		</locales>
+		-->
+	</fontFamily>
+</fontFamilies>
